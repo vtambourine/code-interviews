@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Publitas Frontend Code Challenge</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6901452/773564/css/fonts.css">
+    <style>
+      body {
+        font-family: 'Gotham Rounded A', 'Gotham Rounded B', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333;
+      }
+
+      header {
+        width: 640px;
+        margin: 60px auto;
+      }
+
+      h1, h2 {
+        font-weight: 400;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 38px;
+        margin-bottom: 0;
+      }
+
+      #showcase {
+        display: block;
+        margin: 0 auto;
+        outline: 1px solid #ccc;
+        cursor: -webkit-grab;
+        cursor: -moz-grab;
+      }
+
+      #showcase.drag-active {
+        cursor: -webkit-grabbing;
+        cursor: -moz-grabbing;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Publitas Frontend Code Challenge</h1>
+      <h2>by Benjamin Tambourine</h2>
+    </header>
+
+    <canvas id="showcase" width="640" height="400"></canvas>
+
+    <script src="/slider.js"></script>
+    <script>
+      Slider.render(
+        document.getElementById('showcase'),
+        [
+          '/images/bob_dylan_strums.jpg',
+          '/images/bob_dylan_plays.jpg',
+          '/images/bob_dylan_watches.jpg',
+          '/images/bob_dylan_smokes.jpg'
+        ]
+      )
+    </script>
+  </body>
+</html>

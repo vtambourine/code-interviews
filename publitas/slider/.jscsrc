@@ -1,0 +1,6 @@
+{
+    "esnext": true,
+    "validateIndentation": 4,
+    "validateQuoteMarks": null,
+    "excludeFiles": ["node_modules/**"]
+}

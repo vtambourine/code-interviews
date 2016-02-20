@@ -1,0 +1,25 @@
+{
+  "name": "sandbox-javascript-templates",
+  "author": "Benjamin Tambourine <vtambourine@ya.ru>",
+  "version": "0.0.3",
+  "main": "build/render.js",
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "make tests"
+  },
+  "devDependencies": {
+    "babel": "^5.0.12",
+    "mocha": "^2.2.4",
+    "chai": "^2.2.0",
+    "jscs": "^1.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtambourine/sandbox-javascript-templates.git"
+  },
+  "license": "ISC",
+  "private": true
+}

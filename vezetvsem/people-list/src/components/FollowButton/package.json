@@ -1,0 +1,6 @@
+{
+  "name": "FollowButton",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FollowButton.js"
+}

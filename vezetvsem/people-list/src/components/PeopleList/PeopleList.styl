@@ -1,0 +1,39 @@
+.PeopleList {
+    table {
+        width: 100%;
+        border-spacing: 0;
+        border: 1px solid rgb(191, 191, 191);
+        border-radius: 3px;
+        
+        th {
+            font-weight: normal;
+            text-align: right;
+            background-color: rgb(235, 240, 243);
+            border-width: 0 0 1px 0;
+            border-style: solid;
+            border-color: rgb(216, 217, 218);
+            padding: 7px 27px 8px 7px;
+            color: rgb(84, 84, 84);
+            font-size: 16px;
+        }
+        
+        tr {
+            background-color: rgb(251, 251, 251);
+        }
+            
+        tr:nth-child(2n) {
+            background-color: white;
+        }
+        
+        td {
+            padding: 7px 27px 8px 7px;
+            border-width: 0 0 1px 0;
+            border-style: solid;
+            border-color: rgb(241, 241, 241);
+        }
+    }
+
+    &__name {
+        width: 50%;
+    }
+}

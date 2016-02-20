@@ -1,0 +1,86 @@
+$border-color: #d3d3d3;
+
+@mixin title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: #303030;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.paper {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 0 20px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    text-align: left;
+    color: #70747c;
+    background-color: #fff;
+
+    &__header {
+        padding: 18px 28px 16px;
+        border-bottom: 1px solid $border-color;
+        background: url('../images/icon-description.png') left center no-repeat;
+    }
+
+    &__content {
+        border-bottom: 1px solid $border-color;
+    }
+
+    &__additional {
+        overflow: hidden;
+        height: auto;
+
+        .js &._hidden {
+            height: 0;
+        }
+    }
+
+    &__separator {
+        height: 6px;
+        margin: 20px 0;
+        border: none;
+        background: url('../images/separator.png') center no-repeat;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__section-title {
+        @include title;
+        margin: 0 0 20px;
+    }
+
+    &__controls {
+        padding: 10px 0;
+        text-align: right;
+    }
+}
+
+.button {
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px 21px;
+    border-radius: 4px;
+    color: #fff;
+    background: linear-gradient(to bottom, #01c2fb, #03a7ff);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+}

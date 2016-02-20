@@ -1,0 +1,19 @@
+{
+  "name": "demo-space-inviders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Tambourine <vtambourin@ya.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^5.0.8",
+    "babel-loader": "^5.0.0",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.0.0",
+    "gulp-util": "^3.0.4",
+    "webpack": "^1.7.3"
+  }
+}

@@ -1,0 +1,85 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    background-color: black;
+ }
+
+img {
+   vertical-align: middle;
+}
+
+.container {
+   width: 936px;
+   height: 510px;
+   margin: 0 auto;
+
+   text-align: center;
+   background-color: black;
+   overflow: hidden;
+}
+
+.item,
+.stamp {
+   display: inline-block;
+   width: 468px;
+   height: 268px;
+
+   text-align: center;
+}
+
+.item {
+   width: 234px;
+   height: 134px;
+}
+
+.image {
+   position: relative;
+   display: block;
+
+   cursor: pointer;
+}
+
+.image img {
+   opacity: 1;
+
+   -webkit-transition: opacity 0.3s;
+   transition: opacity .3s;
+}
+
+.image:hover img {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   opacity: 0.5;
+}
+
+.image:after {
+   position: absolute;
+   left: 0;
+   top: 50%;
+   display: block;
+   width: 100%;
+   height: 100%;
+   margin-top: -0.5em;
+
+   content: "Тестовая картинка";
+   color: white;
+   text-align: center;
+   text-indent: -9999em;
+
+   opacity: 0;
+
+   transition-property: opacity, text-indent;
+   transition-duration: .3s, 0s;
+
+}
+
+.image:hover:after {
+   text-indent: 0;
+
+   opacity: 1;
+}

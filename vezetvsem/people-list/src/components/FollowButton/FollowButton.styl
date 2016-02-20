@@ -1,0 +1,67 @@
+.FollowButton {
+    $size = 16px;
+
+    line-height: $size;
+    height: $size;
+    width: $size;
+    max-width: $size;
+    border-radius: 20px;
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+    text-align: center;
+    color: white;
+
+    transition-property: background-color, max-width;
+    transition-duration: 0.3s;
+
+    &:before {
+        display: block;
+        height: $size;
+        width: $size;
+        text-align: center;
+        content: '+';
+    }
+
+    &__label {
+        padding: 0 8px;
+        display: none;
+        color: white;
+        font-weight: normal;
+        font-size: 12px;
+        opacity: 0;
+
+        transition: opacity 0.2s;
+    }
+
+    .no-touchevents &:hover {
+        width: auto;
+        max-width: 600px;
+        background-color: rgb(152, 204, 114);
+    }
+
+    .no-touchevents &:hover:before {
+        display: none;
+    }
+
+    .no-touchevents &:hover &__label {
+        display: inline;
+        opacity: 1;
+    }
+
+    &._followed {
+        background-color: rgb(152, 204, 114);
+    }
+
+    &._followed:before {
+        display: block;
+        content: '✓';
+    }
+
+    .no-touchevents &._followed:hover:before {
+        display: none;
+    }
+        
+    .no-touchevents &._followed:hover {
+        background-color: rgb(245, 66, 66);
+    }
+}

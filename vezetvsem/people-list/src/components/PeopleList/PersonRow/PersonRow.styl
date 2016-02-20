@@ -1,0 +1,47 @@
+.PersonRow {
+    $photo-size = 48px;
+
+    padding: 8px;
+
+    &__photo {
+        float: left;
+        width: $photo-size;
+        height: $photo-size;
+        margin-right: 10px;
+        border-radius: 2px;
+        background-color: gray;
+    }
+        
+    &__name {
+        line-height: ($photo-size / 2);
+        font-weight: bold;
+        color: rgb(34, 112, 202);
+        margin-left: $photo-size + 8px;
+    }
+
+    &__follow {
+        display: inline-block;
+        margin-left: 12px;
+    }
+
+    &__rating,
+    &__ideas,
+    &__following,
+    &__followers {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(90, 90, 90);
+
+        text-align: right;
+    }
+
+    &__rating {
+        line-height: ($photo-size / 2);
+        display: inline-block;
+        text-align: left;
+        padding-left: 16px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAMAAACOacfrAAAADFBMVEW2trbIyMjJycn7+/tyU0ObAAAAK0lEQVR4AYXHsQnAMBAEwbn//nt2Zg4F0sIGYzsbKeFQpISrIiU8NObfdh9jWQEYoyxDrAAAAABJRU5ErkJggg==");
+    }
+}

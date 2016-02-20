@@ -1,0 +1,39 @@
+{
+  "name": "self-people-list",
+  "author": "Benjamin Tambourine <vtambourine@ya.ru>",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp",
+    "lint": "./node_modules/.bin/jshint src/ && ./node_modules/.bin/jscs --preset=yandex --esprima=esprima-fb src/"
+  },
+  "dependencies": {
+    "babel": "^5.0.4",
+    "express": "^4.12.3",
+    "flux": "^2.0.1",
+    "react": "^0.13.1",
+    "superagent": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.0.6",
+    "babel-loader": "^5.0.0",
+    "browser-sync": "^2.5.2",
+    "css-loader": "^0.9.1",
+    "del": "^1.1.1",
+    "esprima-fb": "^14001.1.0-dev-harmony-fb",
+    "exports-loader": "^0.6.2",
+    "gulp": "^3.8.11",
+    "gulp-changed": "^1.2.1",
+    "gulp-load-plugins": "^0.9.0",
+    "gulp-util": "^3.0.4",
+    "imports-loader": "^0.6.3",
+    "jscs": "^1.12.0",
+    "jshint": "^2.6.3",
+    "jsxhint": "^0.14.0",
+    "run-sequence": "^1.0.2",
+    "style-loader": "^0.9.0",
+    "stylus-loader": "^1.0.0",
+    "webpack": "^1.7.3"
+  },
+  "license": "ISC",
+  "private": true
+}
