@@ -1,0 +1,85 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  text-align: center;
+  text-transform: uppercase;
+  font: 18px/2 sans-serif;
+}
+
+button {
+  border: 4px solid #06c;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+
+  &:hover {
+    background-color: lighten(#06c, 40%);
+  }
+}
+
+.game {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 4px #06c solid;
+
+  &-shells {
+    position: relative;
+  }
+}
+
+.shell {
+  position: absolute;
+  top: 150px;
+  width: 40px;
+  height: 40px;
+  background-color: #06c;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &[data-order="0"] {
+    left: 0;
+  }
+
+  &[data-order="1"] {
+    left: 98px;
+  }
+
+  &[data-order="2"] {
+    left: 193px;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 14px;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #c00;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &-opened {
+    margin-top: -10px;
+
+    &:after {
+      bottom: -10px;
+    }
+  }
+
+  &-opened[data-full="true"] {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
