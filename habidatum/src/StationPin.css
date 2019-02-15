@@ -1,0 +1,14 @@
+.StationPin {
+  font: 0/0 a;
+  margin-left: -50%;
+  margin-top: -50%;
+  transition: transform 0.3s;
+}
+
+.StationPin.-active {
+  transform: scale(2);
+}
+
+.StationPin circle {
+  transition: fill 0.3s;
+}

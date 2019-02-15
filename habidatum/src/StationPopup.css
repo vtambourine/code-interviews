@@ -1,0 +1,22 @@
+.StationPopup-popup .mapboxgl-popup-content {
+  font-size: 12px;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #eee;
+}
+
+.StationPopup-popup.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  border-bottom-color: rgba(0, 0, 0, 0.75);
+}
+
+.StationPopup-popup.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+  border-left-color: rgba(0, 0, 0, 0.75);
+}
+
+.StationPopup-popup.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: rgba(0, 0, 0, 0.75);
+}
+
+.StationPopup-popup.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+  border-right-color: rgba(0, 0, 0, 0.75);
+}

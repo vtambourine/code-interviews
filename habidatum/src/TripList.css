@@ -1,0 +1,68 @@
+.ant-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.ant-list-header {
+  flex: 0 0 auto;
+  background-color: #fff;
+}
+
+.ant-spin-nested-loading {
+  flex: 1 1 auto;
+  overflow: scroll;
+}
+
+.TripList {
+  position: absolute;
+  z-index: 1;
+  left: 6%;
+  top: 6%;
+  bottom: 6%;
+  min-width: 200px;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+
+.TripList.-pending {
+  opacity: 0.5;
+}
+
+.TripList-headerButton {
+  margin-left: 0.75em;
+}
+
+.TripList-item {
+  cursor: pointer;
+  transition: background-color 0.3;
+  background-color: #fff;
+}
+
+.TripList-item:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.ant-list-bordered.ant-list-sm .ant-list-item.TripList-item {
+  padding: 0;
+}
+
+.TripList-itemHolder {
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.TripList-itemTitle em {
+  font-style: normal;
+  margin: 0 0.5em;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.TripList-itemDescription {
+  font-size: 80%;
+}
+
+.TripList-itemDuration {
+  margin-right: 1em;
+}
