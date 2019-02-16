@@ -1,0 +1,117 @@
+body {
+    font: 17px/1.6 sans-serif;
+    background-color: #fdf5ce;
+}
+
+.container {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.dropdown {
+    $display-height = 27px;
+    $option-height = 30px;
+
+    display: inline-block;
+    width: 150px;
+    vertical-align: bottom;
+    line-height: $display-height;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &__display {
+        padding: 1px 8px 0;
+
+        min-height: $display-height;
+        border: 1px solid #cecece;
+        border-radius: 3px;
+
+        cursor: pointer;
+
+        &:hover {
+            border-color: #aaa;
+        }
+
+        &:active {
+            background-color: #F5F5F5;
+        }
+    }
+
+    &:focus &__display {
+        border-color: #aaa;
+    }
+
+    &._correct &__display {
+        color: #fff;
+        border-color: #ADD166;
+        background-color: #ADD166;
+    }
+
+    &._wrong &__display {
+        color: #fff;
+        border-color: #F58E8E;
+        background-color: #F58E8E;
+    }
+
+    &__display-value {
+
+    }
+
+    &__list {
+        display: none;
+        float: left;
+        position: relative;
+        width: 100%;
+    }
+
+    &._show &__list {
+        display: block;
+    }
+
+    &__options {
+        position: absolute;
+        top: 3px;
+        z-index: 2;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #AAAAAA;
+        border-radius: 3px;
+
+        box-shadow: 0 3px 10px 2px #fff;
+    }
+
+    &__option {
+        min-height: $option-height;
+        line-height: $option-height;
+        float: left;
+        width: 100%;
+        padding: 0 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &._focused {
+            background-color: #FFFFD9;
+        }
+    }
+
+    &__option-name {
+        float: left;
+        position: relative;
+    }
+
+    &__arrow {
+        line-height: $display-height;
+        float: right;
+    }
+
+    &__tick {
+        line-height: $option-height;
+        display: inline-block;
+        float: right;
+        width: 16px;
+        margin-left: 16px;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,25 @@
+<div class="dropdown {{answerState}}"
+     ng-class="{ _show: listVisible }"
+     tabindex="1"
+     ng-focus="onFocus()"
+     ng-blur="onBlur()">
+    <div class="dropdown__display"
+         ng-click="show()"
+         ng-class="{ _clicked: listVisible, _show: listVisible }">
+        <span class="dropdown__display-value">{{display}}</span>
+        <i class="dropdown__arrow fa fa-angle-down"></i>
+    </div>
+    <div class="dropdown__list">
+        <div class="dropdown__options">
+            <div class="dropdown__option"
+                 ng-repeat="item in list"
+                 ng-class="{ _selected: isSelected(item), _focused: isFocused(item) }"
+                 ng-click="select(item)"
+                 ng-mouseenter="onMouseenter(item)"
+                 ng-mouseleave="onMouseleave(item)">
+                <span class="dropdown__option-name">{{property !== undefined ? item[property] : item}}</span>
+                <i ng-if="isSelected(item)" class="dropdown__tick fa fa-check"></i>
+            </div>
+        </div>
+    </div>
+</div>
