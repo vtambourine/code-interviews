@@ -15,6 +15,6 @@ COPY --from=0 /go/src/github.com/vtambourine/habidatum/server .
 RUN yarn run build
 
 CMD ./server data/201801_citibikejc_tripdata.csv & \
-  serve build/
+  serve build/ -l 3000
 
 EXPOSE 3000 3001
